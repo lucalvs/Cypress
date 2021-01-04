@@ -42,7 +42,7 @@ jobs:
         
       - run: npm run report:mocha
 
-      -name: Deploy to GithubPages
+      - name: Deploy to GithubPages
        uses: JamesIves/githun-pages-deploy-actions@3.7.1
        with:
         GITHUB_TOKEN: $ {{ secrets.GITHUB_TOKEN }}
